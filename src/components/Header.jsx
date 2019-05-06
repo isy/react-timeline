@@ -1,13 +1,20 @@
 import React from "react";
-import "./App.css";
-import Router from "./router";
+import styled from "styled-components";
 
-function App() {
+function Header() {
   return (
-    <div className="App">
-      <Router />
-    </div>
+    <PageHeader>
+      <Title>React Timeline</Title>
+    </PageHeader>
   );
 }
 
-export default App;
+const PageHeader = styled.header`
+  border-bottom: 1px solid #cfcfcf;
+`;
+
+const Title = styled.h1`
+  font-size: 20px;
+`;
+
+export default Header;
